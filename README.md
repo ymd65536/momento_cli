@@ -214,14 +214,6 @@ momento cache get --name sample --key num
 momento cache delete --name sample
 ```
 
-## 廃止されたコマンド
-
-以下のコマンドはv0.40では廃止されているようです。
-
-```sh
-momento account signup
-```
-
 ## Momento でpub/sub通信
 
 
@@ -265,6 +257,23 @@ $ momento topic subscribe --cache sample num3
 
 ## トラブルシューティング
 
+以下のような実行結果が表示された場合でかつ`momento configure --quick`でうまくいかない場合はコンフィグを一度削除してから設定をやり直すことで復旧できます。
+
 ```
 ERROR: Unauthenticated { description: "unauthenticated", source: TonicStatus(Status { code: Unauthenticated, message: "Could not validate authorization header", metadata: MetadataMap { headers: {"content-type": "application/grpc", "server": "envoy", "momento_ver": "3.62.1", "content-length": "0", "access-control-allow-origin": "*", "vary": "origin,access-control-request-method,access-control-request-headers", "access-control-expose-headers": "grpc-status,grpc-message,grpc-encoding,grpc-accept-encoding", "date": "Wed, 21 Jun 2023 15:27:52 GMT", "x-envoy-upstream-service-time": "0"} }, source: None }) }
 ```
+
+以下のコマンドを実行します。このコマンドを実行すると設定全て削除されます。扱い注意！
+
+```sh
+rm -rf ~/.momento/
+```
+
+## 廃止されたコマンド
+
+以下のコマンドはv0.40では廃止されているようです。
+
+```sh
+momento account signup
+```
+
