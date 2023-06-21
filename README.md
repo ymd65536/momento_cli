@@ -115,3 +115,36 @@ momento configure
 セットアップには事前にトークンを取得する必要があります。
 トークンの取得方法は[こちら](https://docs.momentohq.com/ja/getting-started)です。
 
+トークンがどこに保存されるかを調べるには以下のコマンドを実行します。
+
+```sh
+cat ~/.momento/credentials
+```
+
+### helpを開く
+
+使い方がわからなくなったら以下のコマンドを実行します。
+
+```sh
+momento --help
+```
+
+　実行結果
+
+```text
+Command line tool for Momento Serverless Cache
+
+Usage: momento [OPTIONS] <COMMAND>
+
+Commands:
+  cache      Interact with caches
+  topic      Interact with topics
+  configure  Configure credentials
+  help       Print this message or the help of the given subcommand(s)
+
+Options:
+      --verbose            Log more information
+  -p, --profile <PROFILE>  User profile [default: default]
+  -h, --help               Print help
+  -V, --version            Print version
+```
