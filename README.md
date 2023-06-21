@@ -105,3 +105,13 @@ momento --version
 ```
 momento 0.40.0
 ```
+
+### config を設定する
+
+```sh
+momento configure
+```
+
+セットアップには事前にトークンを取得する必要があります。
+トークンの取得方法は[こちら](https://docs.momentohq.com/ja/getting-started)です。
+
