@@ -109,7 +109,7 @@ momento 0.40.0
 ### config を設定する
 
 ```sh
-momento configure
+momento configure --quick
 ```
 
 セットアップには事前にトークンを取得する必要があります。
