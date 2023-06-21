@@ -259,6 +259,10 @@ $ momento topic subscribe --cache sample num3
 3
 ```
 
+## 参考
+
+[momento cli](https://github.com/momentohq/momento-cli/blob/main/README.md)
+
 ## トラブルシューティング
 
 ```
