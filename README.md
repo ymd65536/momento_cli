@@ -149,6 +149,49 @@ Options:
   -V, --version            Print version
 ```
 
+### キャッシュを作成する
+
+以下のコマンドを実行します。
+
+```sh
+momento cache create sample
+```
+
+### キャッシュのリストを開く
+
+以下のコマンドを実行します。
+
+```sh
+momento cache list
+```
+
+実行結果
+```text
+sample
+```
+
+### キャッシュにデータをセットする
+
+以下のコマンドを実行します。
+
+```
+momento cache set --name sample --key num --value 1
+```
+
+### キャッシュにセットしたデータを読み取る
+
+以下のコマンドを実行します。
+
+```sh
+momento cache get --name sample --key num
+```
+
+実行結果
+
+```text
+1
+```
+
 ## 廃止されたコマンド
 
 以下のコマンドはv0.40では廃止されているようです。
