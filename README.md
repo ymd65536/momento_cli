@@ -1,4 +1,4 @@
-# momento_cli
+# Momento CLI
 
 Momento のCLIを体感する。
 
