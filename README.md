@@ -222,6 +222,24 @@ momento cache delete --name sample
 momento account signup
 ```
 
+### 複数のキャッシュを閲覧する
+
+
+キャッシュを作成する為に以下のコマンドを実行します。
+
+```sh
+momento cache create sample
+```
+
+複数のデータをキャッシュします。
+
+```
+momento cache set --name sample --key num1 --value 1
+momento cache set --name sample --key num2 --value 2
+```
+
+
+
 ## トラブルシューティング
 
 ```
