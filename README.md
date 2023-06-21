@@ -148,3 +148,9 @@ Options:
   -h, --help               Print help
   -V, --version            Print version
 ```
+
+## トラブルシューティング
+
+```
+ERROR: Unauthenticated { description: "unauthenticated", source: TonicStatus(Status { code: Unauthenticated, message: "Could not validate authorization header", metadata: MetadataMap { headers: {"content-type": "application/grpc", "server": "envoy", "momento_ver": "3.62.1", "content-length": "0", "access-control-allow-origin": "*", "vary": "origin,access-control-request-method,access-control-request-headers", "access-control-expose-headers": "grpc-status,grpc-message,grpc-encoding,grpc-accept-encoding", "date": "Wed, 21 Jun 2023 15:27:52 GMT", "x-envoy-upstream-service-time": "0"} }, source: None }) }
+```
