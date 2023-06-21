@@ -149,6 +149,14 @@ Options:
   -V, --version            Print version
 ```
 
+## 廃止されたコマンド
+
+以下のコマンドはv0.40では廃止されているようです。
+
+```sh
+momento account signup
+```
+
 ## トラブルシューティング
 
 ```
