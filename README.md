@@ -222,23 +222,42 @@ momento cache delete --name sample
 momento account signup
 ```
 
-### 複数のキャッシュを閲覧する
+## Momento でpub/sub通信
 
 
-キャッシュを作成する為に以下のコマンドを実行します。
+### 事前準備
+
+ターミナルを2つ起動します。
+
+片方のターミナルで以下のコマンドを実行してキャッシュを作成します。
 
 ```sh
 momento cache create sample
 ```
 
-複数のデータをキャッシュします。
+### サブスクライバーを起動する
 
+以下のコマンドを実行することでサブスクライバーが起動し、通信待機状態になります。publishがされたデータを読み取る準備ができました。
+
+```sh
+momento topic subscribe --cache sample num3
 ```
-momento cache set --name sample --key num1 --value 1
-momento cache set --name sample --key num2 --value 2
+
+### パブリッシューを起動する
+
+もう一つのターミナルで以下のコマンドを実行することでパブリッシャーが起動します。
+起動と同時にデータが特定のTopicに配信されます。
+
+```sh
+momento topic publish --cache sample num3 3
 ```
 
+※subscriber側のコンソール
 
+```text
+$ momento topic subscribe --cache sample num3
+3
+```
 
 ## トラブルシューティング
 
