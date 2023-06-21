@@ -192,6 +192,28 @@ momento cache get --name sample --key num
 1
 ```
 
+### キャッシュをクリアする
+
+以下のコマンドを実行します。
+
+```sh
+momento cache flush --cache sample
+```
+
+### キャッシュがクリアされたかを確認する
+
+```sh
+momento cache get --name sample --key num
+```
+
+実行結果が何も返ってこないことを確認する。
+
+### キャッシュを削除する
+
+```sh
+momento cache delete --name sample
+```
+
 ## 廃止されたコマンド
 
 以下のコマンドはv0.40では廃止されているようです。
