@@ -65,3 +65,43 @@ Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
 ```sh
 brew cleanup momento-cli
 ```
+
+## getting started
+
+とりあえず、`momento`と入力してみましょう。
+
+```sh
+momento
+```
+
+　実行結果
+
+```text
+Command line tool for Momento Serverless Cache
+
+Usage: momento [OPTIONS] <COMMAND>
+
+Commands:
+  cache      Interact with caches
+  topic      Interact with topics
+  configure  Configure credentials
+  help       Print this message or the help of the given subcommand(s)
+
+Options:
+      --verbose            Log more information
+  -p, --profile <PROFILE>  User profile [default: default]
+  -h, --help               Print help
+  -V, --version            Print version
+```
+
+### バージョンを調べる
+
+```sh
+momento --version
+```
+
+今回はバージョン0.40 を利用します。
+
+```
+momento 0.40.0
+```
