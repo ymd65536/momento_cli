@@ -277,3 +277,12 @@ rm -rf ~/.momento/
 momento account signup
 ```
 
+実行結果
+
+```text
+$ momento account signup
+ERROR: This command has been decommissioned!
+Please go to the console to sign up for Momento and generate a token:
+https://console.gomomento.com
+```
+
